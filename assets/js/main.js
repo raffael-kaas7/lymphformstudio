@@ -81,4 +81,24 @@
     });
   });
 
+  /* ── CARD EXPAND ── */
+  document.querySelectorAll('.card').forEach((card) => {
+    const p = card.querySelector('p');
+    if (!p) return;
+    const body = document.createElement('div');
+    body.className = 'card-body';
+    p.parentNode.insertBefore(body, p);
+    body.appendChild(p);
+    const btn = document.createElement('button');
+    btn.className = 'card-expand';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.textContent = '… mehr';
+    body.insertAdjacentElement('afterend', btn);
+    btn.addEventListener('click', () => {
+      const open = body.classList.toggle('is-open');
+      btn.textContent = open ? '↑ weniger' : '… mehr';
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+
 })();
