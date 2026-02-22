@@ -724,7 +724,7 @@ button { font-family: var(--font-sans); }
   }
   .hero-sub      { 
     font-family: var(--font-serif);
-    font-size: clamp(2.5rem, 5vw, 2.125rem);
+    font-size: clamp(2.4rem, 5vw, 2.125rem);
     text-align: center; 
     max-width: none; 
   }
