@@ -681,7 +681,12 @@ button { font-family: var(--font-sans); }
     margin: 0;
     height: 440px;                  /* logo height on desktop */
   }
-  .hero-sub      { text-align: center; max-width: none; }
+  .hero-sub      { 
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 2.125rem);
+    text-align: center; 
+    max-width: none; 
+  }
   .hero-cta-row  {
     flex-direction: row;
     max-width: none;
