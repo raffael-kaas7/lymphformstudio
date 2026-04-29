@@ -666,6 +666,15 @@ button { font-family: var(--font-sans); }
   transition: color var(--dur) var(--ease);
 }
 .footer-nav a:hover { color: rgba(255,255,255,.75); }
+.footer-credit {
+  font-size: .75rem;
+  color: rgba(255,255,255,.28);
+}
+.footer-credit a {
+  color: rgba(255,255,255,.45);
+  transition: color var(--dur) var(--ease);
+}
+.footer-credit a:hover { color: rgba(255,255,255,.75); }
 .footer-copy {
   font-size: .75rem;
   color: rgba(255,255,255,.22);
