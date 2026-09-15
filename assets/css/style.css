@@ -807,14 +807,15 @@ button { font-family: var(--font-sans); }
   }
   .about-text { padding-left: 1.0rem; }
 
-  /* Services: 4 columns */
+  /* Services: 3 columns */
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.375rem;
     align-items: start;
   }
   .services-packages-grid {
+    grid-template-columns: repeat(2, 1fr);
     max-width: 1200px;
     margin-inline: auto;
   }
